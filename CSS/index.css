@@ -1,0 +1,70 @@
+h1{
+  text-align: center;
+}
+
+.gfg{
+  color: rgb(0, 153, 0);
+  text-align: center;
+}
+
+.trans{
+  color: rgb(0, 153, 0, 0.5);
+}
+
+.bg{
+  background-color: rgb(0, 153, 0);
+  color: white;
+}
+
+.border-color{
+  border: 3px solid green;
+  color: black;
+}
+
+.border{
+  border: 2px solid black;
+}
+
+.noborder{
+  border-style: none;
+}
+
+.solid {
+  border-style: solid;
+}
+
+.dotted {
+  border-style: dotted;
+}
+
+.dashed {
+  border-style: dashed;
+}
+
+.double {
+  border-style: double;
+}
+
+.hybrid{
+  border-top-style: dashed;
+  border-bottom-style: double;
+  border-left-style: dotted;
+  border-right-style: solid;
+}
+
+.b-8{
+  border: 8px solid;
+}
+
+.radious{
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.ml-20{
+  margin-left: 20px;
+}
+
+.p-20{
+  padding: 20px;
+}
