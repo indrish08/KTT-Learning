@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #008CBA;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+        .button:hover {
+            background-color: #00688B;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <h2><b><u>Buttons</u></b></h2>
+    <br>
+    <h4>Basic button</h4>
+    <button onclick="this.setAttribute('style','background-color:red; color:white')">Click Me!</button>
+    <hr>
+
+    <h4>Button with Text and Icon</h4>
+    <button>
+        <img src="images/img_submit.gif" alt="Save Icon"><br>
+        <span>Save</span>
+    </button>
+    <hr>
+
+    <h4>Button with Click event</h4>
+    <button onclick="alert('Button clicked!')">Get alert</button>
+    <hr>
+
+    <h4>Disabled button</h4>
+    <button disabled>Button</button>
+    <hr>
+
+    <h4>Button with link</h4>
+    <a href="https://www.google.com" class="button">Google</a>
+    <hr>
+
+    <h4>Button Types</h4>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    <button type="button">Regular Button</button>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+</head>
+<body>
+    <h2><b><u>Attributes</u></b></h2>
+    <hr>
+    <h4>Global Attributes</h4>
+    <p>
+        class: Specifies one or more class names for an element. <br>
+        id: Specifies a unique id for an element. <br>
+        style: Used to apply inline CSS styles. <br>
+        title: Provides additional information about the element (often displayed as a tooltip). <br>
+    </p>
+    <p title="This is an description message">Place the mouse over me. (title)</p>
+    <hr>
+
+    <h4>Attributes for form control</h4>
+    <p>
+        name: Defines the name of the form control, used for form submission. <br>
+        value: Specifies the initial value of the form control. <br>
+        placeholder: Provides a short hint that describes the expected value of the form control. <br>
+        required: Indicates that the form control must be filled out before submitting the form. <br>
+        disabled: Disables the form control, making it non-interactive. <br>
+        readonly: Specifies that the form control is read-only (cannot be modified). <br>
+        checked: Indicates whether a checkbox or radio button should be checked by default. <br>
+    </p>
+    <input type="text" value="pre-defined value"><br><br>
+    <input type="text" readonly value="non editable pre-defined value"><br><br>
+    <input type="text" placeholder="placeholder"><br><br>
+    <input type="text" placeholder="required" required><br><br>
+    <input type="text" value="disabled" disabled><br><br>
+    <input type="checkbox" checked> Uncheck me
+    <hr>
+
+    <h4>Table Attributes</h4>
+    <p>
+        colspan and rowspan: Specify the number of columns or rows a table cell should span. <br>
+        border: Sets the thickness of the border around a table. <br>
+        align: Specifies the horizontal alignment of a table or table cell. <br>
+    </p>
+    <table border="2">
+        <tr>
+            <th rowspan="3">No.</th>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+        <tr>
+            <!-- <td>1</td> -->
+            <td>Indrish</td>
+            <td>241</td>
+        </tr>
+        <tr>
+            <!-- <td>2</td> -->
+            <td>Vithun</td>
+            <td>239</td>
+        </tr>
+        <tr>
+            <td colspan="2">Total Score</td>
+            <td>480</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h4>Button Attributes</h4>
+    <p>
+        type: Specifies the type of the button (e.g., submit, reset, button). <br>
+    </p>
+    <h4>Button Types</h4>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    <button type="button">Regular Button</button>
+    <hr>
+
+    <h4>Multimedia Attributes</h4>
+    <p>
+        controls: Adds playback controls to the media element. <br>
+        autoplay: Automatically starts playback of the media. <br>
+        loop: Loops the media playback. <br>
+        preload: Specifies how the media file should be preloaded. <br>
+        muted: Mutes the audio by default. <br>
+        volume: Sets the default volume level (0.0 to 1.0). <br>
+        controlsList: Specifies which controls should be displayed in the audio player. <br>
+            Values: "nodownload", "nofullscreen". <br>
+    </p>
+    <video src="videos/sample_video.mp4" width="500px" controls preload="auto" controlsList="nodownload"></video>
+
+</body>
+</html>
