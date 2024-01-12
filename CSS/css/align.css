@@ -1,0 +1,118 @@
+.c div {
+  background-color: #f4f4f4;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.title {
+  font-size: 40px;
+  text-align: center;
+  color: rgb(255, 69, 69);
+  font-weight: bold;
+}
+
+.container1 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: rgb(0, 216, 223);
+}
+
+.container2 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: stretch;
+  background-color: rgb(0, 216, 223);
+}
+
+.container3 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: rgb(0, 216, 223);
+}
+
+.container4 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  background-color: rgb(0, 216, 223);
+}
+
+.container5 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: space-around;
+  background-color: rgb(0, 216, 223);
+}
+
+.container6 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background-color: rgb(0, 216, 223);
+}
+
+.container7 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: start;
+  background-color: rgb(0, 216, 223);
+}
+
+.container8 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: end;
+  background-color: rgb(0, 216, 223);
+}
+
+.container9 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: normal;
+  background-color: rgb(0, 216, 223);
+}
+
+.container10 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: baseline;
+  background-color: rgb(0, 216, 223);
+}
+
+.container11 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  background-color: rgb(0, 216, 223);
+}
+
+.container12 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: safe;
+  background-color: rgb(0, 216, 223);
+}
+
+.container13 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: unsafe;
+  background-color: rgb(0, 216, 223);
+}
