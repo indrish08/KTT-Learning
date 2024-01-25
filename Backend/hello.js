@@ -22,9 +22,6 @@ const server = http.createServer(function (req, res) {
 
         res.writeHead(200, { "Content-Type": "text/html" });
         res.write(data);
-        // console.log(req.method);
-        // console.log(req.url);
-        // console.log(req.headers);
         return res.end();
     });
 });
