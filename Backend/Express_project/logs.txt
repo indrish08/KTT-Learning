@@ -1,0 +1,13 @@
+[29/1/2024, 12:54:31 pm] GET /api/books/1
+[29/1/2024, 12:54:35 pm] GET /api/books
+[29/1/2024, 12:56:39 pm] GET /api/books/2
+[29/1/2024, 12:57:35 pm] GET /api/books
+[29/1/2024, 12:57:38 pm] GET /api/books/1
+[29/1/2024, 12:57:54 pm] GET /api/books/1
+[29/1/2024, 6:57:27 pm] GET /
+[29/1/2024, 6:57:32 pm] GET /logs
+[29/1/2024, 6:57:33 pm] GET /logs
+[29/1/2024, 6:57:35 pm] GET /logs
+[29/1/2024, 7:08:30 pm] GET /
+[29/1/2024, 7:10:07 pm] GET /api/books
+[29/1/2024, 7:10:21 pm] GET /api/books/1
