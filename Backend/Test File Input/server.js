@@ -14,13 +14,22 @@ app.get('/', (req, res) => {
 });
 
 app.post('/upload', (req, res) => {
-  console.log(req.files.fileInput);
   if (!req.files) {
     return res.status(400).send('No files were uploaded.');
   }
+  
+  console.log(req.files.fileInput);
+  const uploadedFiles = req.files.fileInput;
 
-  const uploadedFile = req.files.fileInput;
-  uploadedFile.mv(path.join(__dirname, 'uploads', uploadedFile.name))
+  if(Array.isArray(uploadedFiles)){
+    uploadedFiles.forEach((uploadedFile) => {
+      uploadedFile.mv(path.join(__dirname, 'uploads', uploadedFile.name))
+    })
+  }else{
+    uploadedFiles.mv(path.join(__dirname, 'uploads', uploadedFiles.name))
+  }
+
+
   res.send('File uploaded successfully!');
 });
 
