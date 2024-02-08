@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Blog</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+      <a href="/" class="navbar-brand ps-3">Bootstrap</a>
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Grid</a>
+          </li>
+          <li class="nav-item">
+            <a href="/modal" class="nav-link">Modal</a>
+          </li>
+          <li class="nav-item">
+            <a href="/forms" class="nav-link">Forms</a>
+          </li>
+          <li class="nav-item">
+            <a href="/list-groups" class="nav-link">List-Groups</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <h5>Normal List Group</h5>
+  <ul class="list-group w-25 ms-5 mb-3">
+    <li class="list-group-item">Grid</li>
+    <li class="list-group-item">Modals</li>
+    <li class="list-group-item">Forms</li>
+    <li class="list-group-item">List-Groups</li>
+  </ul>
+
+  <h5>With links</h5>
+  <ul class="list-group w-25 ms-5 mb-3">
+    <a href="#" class="list-group-item list-group-item-action">Grid</a>
+    <a href="#" class="list-group-item list-group-item-action active">Modals</a>
+    <a href="#" class="list-group-item list-group-item-action">Forms</a>
+    <a href="#" class="list-group-item list-group-item-action">List-Groups</a>
+  </ul>
+
+  <h5>List Group Flush</h5>
+  <ul class="list-group list-group-flush w-25 ms-5 mb-3">
+    <a href="#" class="list-group-item list-group-item-action">Grid</a>
+    <a href="#" class="list-group-item list-group-item-action">Modals</a>
+    <a href="#" class="list-group-item list-group-item-action">Forms</a>
+    <a href="#" class="list-group-item list-group-item-action">List-Groups</a>
+  </ul>
+
+  <h5>List Group Numbered</h5>
+  <ol class="list-group list-group-numbered w-25 ms-5 mb-3">
+    <li class="list-group-item">Grid</li>
+    <li class="list-group-item">Modals</li>
+    <li class="list-group-item">Forms</li>
+    <li class="list-group-item">List-Groups</li>
+  </ol>
+
+  <h5>List with badge</h5>
+  <ol class="list-group list-group-numbered w-50 ms-5 mb-3">
+    <a href="#" class="list-group-item d-flex align-items-start">
+      <p class="me-auto ms-1">Grid</p>
+      <span class="badge bg-primary rounded-pill">12</span>
+    </a>
+    <a href="#" class="list-group-item d-flex align-items-start">
+      <p class="me-auto ms-1">Modals</p>
+      <span class="badge bg-primary rounded-pill">1</span>
+    </a>
+    <a href="#" class="list-group-item d-flex align-items-start">
+      <p class="me-auto ms-1">Forms</p>
+      <span class="badge bg-primary rounded-pill">23</span>
+    </a>
+    <a href="#" class="list-group-item d-flex align-items-start">
+      <p class="me-auto ms-1">List-Groups</p>
+      <span class="badge bg-primary rounded-pill">19</span>
+    </a>
+  </ol>
+
+  <h5>Cards</h5>
+  <div class="card ms-5 w-25"">
+    <img src="images/hotballoon.webp" class="card-img-top" alt="image">
+    <div class="card-body">
+      <h5 class="card-title">Hot Balloon</h5>
+      <p class="card-text">Hot balloons are in the air.</p>
+      <a href="#" class="btn btn-primary">Click Here</a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Modal</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+      <a href="/" class="navbar-brand ps-3">Bootstrap</a>
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Grid</a>
+          </li>
+          <li class="nav-item">
+            <a href="/modal" class="nav-link">Modal</a>
+          </li>
+          <li class="nav-item">
+            <a href="/forms" class="nav-link">Forms</a>
+          </li>
+          <li class="nav-item">
+            <a href="/list-groups" class="nav-link">List-Groups</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <h5>Modal</h5>
+    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-form">
+      Modal example
+    </button>
+    <div class="modal fade" id="modal-form">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Hello! Title area</h5>
+            <button type="button" class="btn-close" data-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              This area is body of the modal. This can contain readable text
+              of form input from user.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">
+              Close
+            </button>
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
+
+</body>
+<script src="jquery.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>

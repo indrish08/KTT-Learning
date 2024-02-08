@@ -10,16 +10,16 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
-app.get('/blog', (req, res) => {
-    res.sendFile(__dirname + '/blog.html')
+app.get('/modal', (req, res) => {
+    res.sendFile(__dirname + '/modal.html')
 })
 
-app.get('/aboutme', (req, res) => {
-    res.sendFile(__dirname + '/aboutme.html')
+app.get('/forms', (req, res) => {
+    res.sendFile(__dirname + '/forms.html')
 })
 
-app.get('/contact', (req, res) => {
-    res.sendFile(__dirname + '/contact.html')
+app.get('/list-groups', (req, res) => {
+    res.sendFile(__dirname + '/list_groups.html')
 })
 
 app.listen(3002, ()=>{

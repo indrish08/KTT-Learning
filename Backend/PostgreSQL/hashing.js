@@ -4,14 +4,20 @@ const saltRounds = 10;
 var plain_text = 'hello';
 var hash_text = '';
 
-bcrypt.hash(plain_text, saltRounds, (err, hash) => {
-    hash_text = hash;
-    console.log(hash_text)
-})
+bcrypt.hash(plain_text, saltRounds)
+    .then((hash) => {
+        hash_text = hash;
+        console.log(hash_text)
+        check(hash_text)
+    }).catch(error => {
+        console.log(error);
+    });
 
-bcrypt.compare(plain_text, hash_text, (err,result) => {
-    console.log(result);
-})
-
-console.log(hash_text);
-console.log(plain_text);
+function check(hash_text){
+    bcrypt.compare(plain_text, hash_text)
+        .then((result) => {
+            console.log(result);
+        }).catch(error => {
+            console.log(error);
+        });
+}
