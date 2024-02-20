@@ -1,5 +1,5 @@
 GET http://localhost:3000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNzA3NDc4NDA4LCJleHAiOjE3MDc0Nzg0MjN9.rHeoy3_1x1t8vNc6D_nC5htzo5aFJrRUS3CXUb5e4hg
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW5kcmlzaCIsImlhdCI6MTcwNzczMTM2MSwiZXhwIjoxNzA3NzM4NTYxfQ.Gs5gOkNeQwkVS_smEI5R9v1SMfHrERVjUfREPhFbrBg
 
 ###
 
@@ -16,7 +16,7 @@ POST http://localhost:4000/token
 Content-Type: application/json
 
 {
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNzA3NDc4MzkyfQ.x4-t4dO2Vffo1BLesXvofCKS5pUPt6LX0mxyORl6H1c"
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obiIsImlhdCI6MTcwNzcyOTkzN30.xBiDN0rTaZpnm5zUqlkD0F-iL31sHGBa2Oe-_aTNFXI"
 }
 
 ###
@@ -25,5 +25,5 @@ POST http://localhost:4000/login
 Content-Type: application/json
 
 {
-  "username": "Jim"
+  "username": "Indrish"
 }

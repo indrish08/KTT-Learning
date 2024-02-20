@@ -1,5 +1,5 @@
 // const { Sequelize, DataTypes } = require("sequelize");
-const User = require('./models/userModel')
+const User = require('./models/User')
 
 // const sequelize = new Sequelize(
 //   "postgres://postgres:indrish@localhost:5432/pulsebeat"
