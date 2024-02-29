@@ -2,3 +2,4 @@
 template/
 node_modules/
 KTT*.xlsx
+test/
