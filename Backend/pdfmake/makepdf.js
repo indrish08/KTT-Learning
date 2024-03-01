@@ -42,12 +42,16 @@ var SoNo = 'BR/01'
 var invoiceNo = 'Inv/01'
 var company = 'Ambuja Cements'
 
+function totalAmountSum() {
+    return tableData.reduce((sum, _, i) => sum + totalAmount(i), 0)
+}
+
 function sum(col) {
-    var sum = 0;
-    for (let i = 0; i < tableData.length; i++){
-        sum += parseInt(tableData[i][col])
-    }
-    return sum
+    return tableData.reduce((sum, row) => sum + parseInt(row[col]), 0);
+}
+
+function totalAmount(index) {
+    return tableData[index][7] * tableData[index].slice(10, 15).reduce((sum, value) => sum + parseInt(value), 0)
 }
 
 var dd = {
@@ -127,23 +131,23 @@ var dd = {
                       { text: 'IGST', style: 'tableHeader' },
                       { text: 'Total Amount', style: 'tableHeader' }
                     ],
-	                ...tableData.map(row => [
-                        	{ text: row[0], alignment: 'right' },
-                        	{ text: row[1], alignment: 'center' },
-                        	{ text: row[2], alignment: 'center' },
-                        	{ text: row[3] },
-                        	{ text: row[4] },
-                        	{ text: row[5], alignment: 'right' },
-                        	{ text: row[6], alignment: 'right' },
-                        	{ text: row[7], alignment: 'right' },
-                        	{ text: row[8] },
-                        	{ text: row[9] },
-                        	{ text: row[10], alignment: 'right' },
-                        	{ text: row[11], alignment: 'right' },
-                        	{ text: row[12], alignment: 'right' },
-                        	{ text: row[13], alignment: 'right' },
-                        	{ text: row[14], alignment: 'right' },
-                        	{ text: row[15], alignment: 'right' },
+	                ...tableData.map((col, index) => [
+                        	{ text: col[0], alignment: 'right' },
+                        	{ text: col[1], alignment: 'center' },
+                        	{ text: col[2], alignment: 'center' },
+                        	{ text: col[3] },
+                        	{ text: col[4] },
+                        	{ text: col[5], alignment: 'right' },
+                        	{ text: col[6], alignment: 'right' },
+                        	{ text: col[7], alignment: 'right' },
+                        	{ text: col[8] },
+                        	{ text: col[9] },
+                        	{ text: col[10], alignment: 'right' },
+                        	{ text: col[11], alignment: 'right' },
+                        	{ text: col[12], alignment: 'right' },
+                        	{ text: col[13], alignment: 'right' },
+                        	{ text: col[14], alignment: 'right' },
+                        	{ text: totalAmount(index), alignment: 'right' },
                         ]),
 	                [
                         { colSpan: 7, text: 'SUM :' }, '', '', '', '', '', '', 
@@ -153,7 +157,7 @@ var dd = {
                         { text: sum(12), alignment: 'right' }, 
                         { text: sum(13), alignment: 'right' }, 
                         { text: sum(14), alignment: 'right' }, 
-                        { text: sum(15), alignment: 'right' }, 
+                        { text: totalAmountSum(), alignment: 'right' }, 
                     ]
 	            ]
 	        }
